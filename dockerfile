@@ -15,10 +15,10 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #TOMCAT 
 ENV TOMCAT_MAJOR 8
-ENV TOMCAT_VERSION 8.5.41
+ENV TOMCAT_VERSION 8.5.79
 
-RUN wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.41/bin/apache-tomcat-8.5.41.tar.gz && \
- tar -zxvf apache-tomcat-8.5.41.tar.gz && \
+RUN wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.79/bin/apache-tomcat-8.5.79.tar.gz && \
+ tar -zxvf apache-tomcat-8.5.79.tar.gz && \
  rm apache-tomcat*.tar.gz && \
  mv apache-tomcat* ${CATALINA_HOME} && \
  chmod +x ${CATALINA_HOME}/bin/*sh && \
